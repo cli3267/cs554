@@ -1,0 +1,74 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* That imports the entirety of bootstrap, taken from ../../node_modules/bootstrap/scss/bootstrap.scss
+ we can optimize it by only selectively including the modules we need:
+*/
+
+/* 
+ @import "functions";
+ @import "variables";
+ @import "mixins";
+ @import "root";
+ @import "reboot";
+ @import "type";
+ @import "images";
+ @import "code";
+ @import "grid";
+ @import "tables";
+ @import "forms";
+ @import "buttons";
+ @import "transitions";
+ @import "dropdown";
+ @import "button-group";
+ @import "input-group";
+ @import "custom-forms";
+ @import "nav";
+ @import "navbar";
+ @import "card";
+ @import "breadcrumb";
+ @import "pagination";
+ @import "badge";
+ @import "jumbotron";
+ @import "alert";
+ @import "progress";
+ @import "media";
+ @import "list-group";
+ @import "close";
+ @import "modal";
+ @import "tooltip";
+ @import "popover";
+ @import "carousel";
+ @import "utilities";
+ @import "print";
+
+ */
+
+@mixin border-bottom($size) {
+    border-bottom: $size solid #000080;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $primary-font-size;
+    background-clip: border-box;
+}
+
+.card-body h1 {
+    font-size: $christina-favorite-font-size;
+    color: $text-color;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav a {
+    font-size: $navigation;
+    color: $christina-color;
+}
+
+.card-footer button {
+    background-color: $background;
+    color: black;
+}
