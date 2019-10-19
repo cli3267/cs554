@@ -14,12 +14,14 @@ app.get("/api/people/history", async (req, res) => {
     try {
         let dict = [];
         if (result.length <= 20) {
+            // checks the result length and returns everything if the length is <= 20
             for (let i = 0; i < result.length; i++) {
                 let cMem = JSON.parse(await client.getAsync(result[i]));
                 dict.push(cMem);
             }
             res.json(dict)
         } else {
+            // tempResult will hold the last 20 users 
             let tempResult = result.slice(Math.max(result.length - 20, 1))
             for (let i = 0; i < tempResult.length; i++) {
                 let cMem = JSON.parse(await client.getAsync(tempResult[i]));
