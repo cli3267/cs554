@@ -1,1 +1,1 @@
-# cs554
+# CS 554 - Web Development 2
