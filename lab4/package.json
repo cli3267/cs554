@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Christina Li 10423841",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.7.0",
